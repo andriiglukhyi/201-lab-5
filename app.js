@@ -49,12 +49,6 @@ function sumArray(testArray1){ //eslint-disable-line
 
 sumArray(testArray);
 
-// TODO: Here is the test for sumArray(); uncomment it to run it
-// testSumArray(testArray);
-
-// Once you get the test passing, do an a-c-p cycle and synchronize the code between GitHub and your laptop. Don't forget to create a new branch for your work on the next question!
-
-/////////////////////////////////////
 /* Problem 5
 Write a function called multiplyArray() that takes an array of numbers as its argument and returns an array whose first element is the product of those numbers, and the second element is a string that EXACTLY follows this example and concatenates a message using the arguments that were passed into the function:
 
@@ -65,10 +59,15 @@ IMPORTANT DETAIL: You may not use the arithmetic operator * in this function. To
 Test this function by hand in the console to get it working, and when you think it is finished, uncomment the call for the testMultiplyArray() function and see if the test passes.*/
 
 // Write your code here
-function multiplyArray(testArray){ //eslint-disable-line
+function multiplyArray(testArray1){ //eslint-disable-line
+  var num1 = sumAndMultiply(testArray1[0], testArray1[1], testArray1[2]);
+  var num1c = num1[1];
+  var stri1 = 'The numbers ' + testArray1[0] + ' , ' + testArray1[1] + ' , ' + testArray1[2] + ' ave a product of ' + num1c + ;
+  return [num1c, stri1]
 
 }
 
+multiplyArray(testArray);
 // Here is the test for multiplyArray(); uncomment it to run it
 // testMultiplyArray(2,3,4);
 
